@@ -17,4 +17,4 @@ jobs:
           record: true
         env:
           # pass the Dashboard record key as an environment variable
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_RECORD_KEY: a61c5b76-8619-4363-895d-582a7d3f2368
