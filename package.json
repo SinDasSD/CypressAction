@@ -1,0 +1,17 @@
+{
+  "name": "cypress_crowddesk",
+  "version": "1.0.0",
+  "description": "Test of CrowdDesk via Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "Cypress", "CrowdDesk"
+  ],
+  "author": "SinDasSD",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.2.0"
+  }
+}
