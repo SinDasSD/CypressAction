@@ -59,10 +59,10 @@ with:
     quiet: # optional
 
     jobs:
-        check-product-configurator:
+        check-crowddesk-product-configurator:
             runs-on: windows-latest
             steps:
                 - uses: actions/checkout@v2
                 - uses: actions/setup-node@v1
                 - run: npm install cypress --save-dev
-                - run: .\node_modules\.bin\cypress run
+                - run: cypress -v
