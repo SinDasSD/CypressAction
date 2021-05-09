@@ -4,7 +4,16 @@ name: Cypress Test on CrowdDesk Product Configurator
   
 on:
   workflow_dispatch:
-    
+
+jobs:
+  check-product-configurator:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install cypress --save-dev
+      - run: cypress -v
+
 uses: cypress-io/github-action@v2.9.7
 with:
     # Sends test results to Cypress Dashboard
@@ -57,12 +66,3 @@ with:
     cache-key: # optional
     # Whether or not to silence any Cypress specific output from stdout
     quiet: # optional
-
-    jobs:
-        check-crowddesk-product-configurator:
-            runs-on: windows-latest
-            steps:
-                - uses: actions/checkout@v2
-                - uses: actions/setup-node@v1
-                - run: npm install cypress --save-dev
-                - run: cypress -v
